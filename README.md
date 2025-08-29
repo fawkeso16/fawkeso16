@@ -33,16 +33,52 @@ I'm a computer science curretnly in 2nd year at UEA, i am working on a few proje
 ## 🚀 Featured Projects
 
 <p align="center">
-  <a href="https://github.com/fawkeso16/health-tracker">
-    <img src="https://img.shields.io/badge/Health_Tracker-React%20%2F%20SpringBoot-brightgreen?style=for-the-badge&logo=react&logoColor=white" />
+  <a href="https://github.com/fawkeso16/health-tracker" style="
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(45deg, #61dafb, #21a1f1);
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s;
+  " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    Health Tracker
   </a>
-  <a href="https://github.com/fawkeso16/drone-simulator">
-    <img src="https://img.shields.io/badge/Drone_Simulator-JavaFX%20%2F%20SpringBoot-blue?style=for-the-badge&logo=java&logoColor=white" />
+
+  <a href="https://github.com/fawkeso16/drone-simulator" style="
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(45deg, #f05454, #d90429);
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s;
+  " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    Drone Simulator
   </a>
-  <a href="https://github.com/fawkeso16/video-game-search-engine">
-    <img src="https://img.shields.io/badge/Video_Game_Search_Engine-Python%20%2F%20Flask-orange?style=for-the-badge&logo=python&logoColor=white" />
+
+  <a href="https://github.com/fawkeso16/video-game-search-engine" style="
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(45deg, #ffb347, #ffcc33);
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s;
+  " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    Video Game Search Engine
   </a>
 </p>
+
 
 ---
 
