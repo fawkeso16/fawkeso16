@@ -28,7 +28,7 @@ Data Structures & Algorithms · Concurrency · WebSockets · REST APIs · Databa
 
 ## 🚀 Featured projects
 - [Health Tracker](https://github.com/ConnorGowerr/Software-Engineering-project) — Team project: health-tracking web app with analytics (Vanilla js, Node js).
-- [Drone Simulator](https://github.com/fawkeso16/RoughDroneMontor-SimService-first-rough-draft-) — Early-stage drone motion & control simulation (React, Spring Boot).
+- [Drone Simulator](https://github.com/fawkeso16/RoughDroneMontor-SimService-first-rough-draft-) — Early-stage drone simulator & admin monitoring system (React, Spring Boot).
 - [Video Game Search Engine](https://github.com/fawkeso16/Videogame-ir-searchengine) — Search & indexing demo for game metadata (JS/Python).
 
 
