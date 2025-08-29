@@ -1,14 +1,26 @@
 name: Update GitHub Stats
+
+# Triggers:
+# 1. Manual run from Actions tab (workflow_dispatch)
+# 2. On every push to main (ensures the workflow shows up quickly and updates stats if code changes)
+# 3. Daily scheduled run at 00:00 UTC
 on:
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
   schedule:
-    - cron: '0 0 * * *'  # runs daily at midnight
-  workflow_dispatch:      # allows manual run
+    - cron: "0 0 * * *"  # daily at 00:00 UTC
+
+# Needed so the workflow can push the generated stats file back.
+permissions:
+  contents: write
 
 jobs:
   generate-stats:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Generate GitHub Stats
         uses: matchai/github-readme-stats-action@v1
@@ -18,3 +30,24 @@ jobs:
           theme: tokyonight
           count_private: true
           output_path: stats
+
+      - name: Commit and push updated stats (if changed)
+        run: |
+          if git diff --quiet --exit-code; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats
+          git commit -m "chore: update stats $(date -u +'%Y-%m-%d')"
+          git push
+
+      - name: Upload stats artifact (optional visibility)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-output
+          path: stats
+
+# Notes:
