@@ -1,18 +1,12 @@
 # 👋 Hi — I'm Ollie Fawkes
 Computer Science student (2nd year, UEA) · building web apps, simulations, and tools to learn systems design.
 
-
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=fawkeso16&show_icons=true&theme=radical" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fawkeso16&layout=compact&theme=radical" />
-</div>
 ---
 
 ## 🔭 About me
 - 2nd year Computer Science student at UEA.
 - Interests: real-time systems, simulation, web apps.
-- Currently exploring: Optimal scheduling algorithms, and 
+- Currently exploring: Optimal scheduling algorithms to develop a drone simulator/monitoring platform.
 
 <p align="center">
   <img src="assests/snake.gif" alt="Snake demo" width="700"/>
