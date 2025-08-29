@@ -4,7 +4,7 @@
 I'm a computer science curretnly in 2nd year at UEA, i am working on a few projects and trying to broaden my programming scope;
 
 <p align="center">
-<img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" width="250"/></p>
+ <img src="assets/commit-snake.gif" width="700"/></p>
 
 ---
 
