@@ -32,12 +32,14 @@ I'm a computer science curretnly in 2nd year at UEA, i am working on a few proje
 
 ## 🚀 Featured Projects
 
-[🚀 Health Tracker](https://github.com/fawkeso16/health-tracker)  
-[🛸 Drone Simulator](https://github.com/fawkeso16/drone-simulator)  
-[🎮 Video Game Search Engine](https://github.com/fawkeso16/video-game-search-engine)
-
+[🚀 Health Tracker](https://github.com/ConnorGowerr/Software-Engineering-project)  
+[🛸 Drone Simulator](https://github.com/fawkeso16/RoughDroneMontor-SimService-first-rough-draft-)  
+[🎮 Video Game Search Engine](https://github.com/fawkeso16/Videogame-ir-searchengine)
 
 ---
 
-## 💬 About Me
+## 💬 About
+
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-blue?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Oliver_f/)
+[LinkedIn](https://www.linkedin.com/in/oliver-fawkes-b96078185)
 
