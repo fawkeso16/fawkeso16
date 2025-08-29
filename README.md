@@ -41,5 +41,5 @@ I'm a computer science curretnly in 2nd year at UEA, i am working on a few proje
 ## 💬 About
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-blue?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Oliver_f/)
-[LinkedIn](https://www.linkedin.com/in/oliver-fawkes-b96078185)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oliver-fawkes-b96078185)
 
