@@ -1,15 +1,12 @@
 # 👋 Hi — I'm Ollie Fawkes
 Computer Science student (2nd year, UEA) · building web apps, simulations, and tools to learn systems design.
 
-<p align="center">
-  <img src="assets/banner.png" alt="Ollie Fawkes banner" width="880"/>
-</p>
 
-<p align="center">
-  [![GitHub stats](https://github-readme-stats.vercel.app/api?username=fawkeso16&show_icons=true&theme=radical)]
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=fawkeso16&layout=compact&theme=radical)]
-</p>
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=fawkeso16&show_icons=true&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fawkeso16&layout=compact&theme=radical" />
+</div>
 ---
 
 ## 🔭 About me
