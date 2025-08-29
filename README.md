@@ -26,8 +26,8 @@ I'm a computer science curretnly in 2nd year at UEA, i am working on a few proje
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=fawkeso16&show_icons=true&theme=tokyonight&count_private=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fawkeso16&layout=compact&theme=tokyonight&count_private=true" />
+![GitHub stats](stats/github-stats.png)
+![Top Languages](stats/top-langs.png)
 </p>
 
 ---
