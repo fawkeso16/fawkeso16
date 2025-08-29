@@ -13,7 +13,7 @@ jobs:
       - name: Generate GitHub Stats
         uses: anuraghazra/github-readme-stats@v0.3.6
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.token }}
           username: fawkeso16
           theme: tokyonight
           show_icons: true
