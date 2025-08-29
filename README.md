@@ -4,7 +4,7 @@
 I'm a computer science curretnly in 2nd year at UEA, i am working on a few projects and trying to broaden my programming scope;
 
 <p align="center">
- <img src="assets/snake.gif" width="700"/></p>
+ <img src="assests/snake.gif" width="700"/></p>
 
 ---
 
