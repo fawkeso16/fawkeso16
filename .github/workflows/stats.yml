@@ -2,14 +2,14 @@ name: Update GitHub Stats
 
 # Triggers:
 # 1. Manual run from Actions tab (workflow_dispatch)
-# 2. On every push to main (ensures the workflow shows up quickly and updates stats if code changes)
+# 2. On every push to main (updates stats quickly)
 # 3. Daily scheduled run at 00:00 UTC
 on:
   workflow_dispatch: {}
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 0 * * *"  # daily at 00:00 UTC
+    - cron: "0 0 * * *"
 
 # Needed so the workflow can push the generated stats file back.
 permissions:
@@ -19,9 +19,10 @@ jobs:
   generate-stats:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Generate GitHub Metrics
+      - name: Generate GitHub Metrics (essential stats only)
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GH_TOKEN }}
@@ -37,6 +38,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add stats
-          git diff --quiet || git commit -m "update metrics $(date -u +'%Y-%m-%d')"
-          git push
-
+          if git diff --quiet --exit-code; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          # Pull latest to avoid non-fast-forward errors
+          git pull --rebase origin main
+          git commit -m "update metrics $(date -u +'%Y-%m-%d')"
+          git push origin main
