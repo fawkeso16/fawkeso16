@@ -26,6 +26,15 @@ I'm a computer science student currently in 2nd year at UEA. I'm working on a fe
   <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white" />
 </p>
 
+### Concepts & Technologies
+<p align="center">
+  <img src="https://img.shields.io/badge/Data_Structures%20%26%20Algorithms-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Concurrency-9b59b6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/WebSockets-1abc9c?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/REST_APIs-f39c12?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Database_Design-34495e?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OOP-8e44ad?style=for-the-badge" />
+</p>
 ---
 
 ## 🚀 Featured Projects
