@@ -4,7 +4,7 @@
 I'm a computer science curretnly in 2nd year at UEA, i am working on a few projects and trying to broaden my programming scope;
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7qDP3QwrW7y3FzQ8/giphy.gif" width="200"/>
+  <img src="[https://media.giphy.com/media/3o7qDP3QwrW7y3FzQ8/giphy.gif](https://www.researchgate.net/profile/Isa-Dussauge/publication/277820221/figure/fig2/AS:669423601999885@1536614432979/Homer-Simpsons-brain-seen-with-MRI-X-ray-Image-reproduced-on-many-Internet-sites_Q320.jpg)" width="200"/>
 </p>
 
 ---
