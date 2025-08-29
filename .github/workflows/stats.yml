@@ -1,0 +1,16 @@
+name: Generate GitHub stats
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *' # optional daily update
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate stats
+        uses: anuraghazra/github-readme-stats@v0.3.6
+        with:
+          github_token: ${{ secrets.TOKEN }}
