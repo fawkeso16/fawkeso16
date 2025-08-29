@@ -2,14 +2,14 @@ name: Update GitHub Stats
 
 # Triggers:
 # 1. Manual run from Actions tab (workflow_dispatch)
-# 2. On every push to main (updates stats quickly)
+# 2. On every push to main (ensures the workflow shows up quickly and updates stats if code changes)
 # 3. Daily scheduled run at 00:00 UTC
 on:
   workflow_dispatch: {}
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"  # daily at 00:00 UTC
 
 # Needed so the workflow can push the generated stats file back.
 permissions:
@@ -21,28 +21,91 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Prepare stats directory
+        run: mkdir -p stats
 
-      - name: Generate GitHub Metrics (essential stats only)
+      - name: Overview (header + core sections)
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GH_TOKEN }}
           user: fawkeso16
           template: classic
-          base: header, activity, repositories, languages
+          base: header, repositories, metadata
+          config_timezone: Etc/UTC
+          filename: stats/overview.svg
           config_display: large
-          filename: stats/metrics.svg
+          config_animations: yes
+          plugins_errors_fatal: false
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+
+      - name: Languages (detailed)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          user: fawkeso16
+          template: classic
+            
+          base: header
+          filename: stats/languages.svg
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 30
+          plugin_languages_ignored: html, css
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 12
+          plugin_languages_indepth: yes
+          plugin_languages_recent_load: 300
+          plugin_languages_recent_days: 14
           plugins_errors_fatal: false
 
-      - name: Commit & push stats if changed
+      - name: Achievements & Lines
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          user: fawkeso16
+          template: classic
+          base: header, activity
+          filename: stats/achievements.svg
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+          plugin_achievements_display: compact
+          plugin_lines: yes
+          plugins_errors_fatal: false
+          config_padding: 8, 16
+
+      - name: Habits (commit patterns)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          user: fawkeso16
+          template: classic
+          base: header
+          filename: stats/habits.svg
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
+          plugins_errors_fatal: false
+
+      - name: Commit and push updated stats (if changed)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add stats
           if git diff --quiet --exit-code; then
             echo "No changes to commit"
             exit 0
           fi
-          # Pull latest to avoid non-fast-forward errors
-          git pull --rebase origin main
-          git commit -m "update metrics $(date -u +'%Y-%m-%d')"
-          git push origin main
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats
+          git commit -m "chore: update stats $(date -u +'%Y-%m-%d')"
+          git push
+      - name: Upload stats artifact (optional visibility)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-output
+          path: stats
+
+# Notes:
