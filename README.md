@@ -26,8 +26,8 @@ I'm a computer science curretnly in 2nd year at UEA, i am working on a few proje
 ## 📊 GitHub Stats
 
 <p align="center">
-![GitHub stats](stats/github-stats.png)
-![Top Languages](stats/top-langs.png)
+  <img src="stats/github-stats.png" />
+  <img src="stats/top-langs.png" />
 </p>
 
 ---
