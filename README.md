@@ -35,8 +35,10 @@ Data Structures & Algorithms · Concurrency · WebSockets · REST APIs · Databa
 ---
 
 ## 📫 Connect
-<p align="center">
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oliver-fawkes-b96078185) [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Oliver_f/)
-
-</p>
+<a href="https://www.linkedin.com/in/oliver-fawkes-b96078185">
+  <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://leetcode.com/u/Oliver_f/">
+  <img src="https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
+</a>
 
