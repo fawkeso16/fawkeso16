@@ -19,7 +19,7 @@ Computer Science student (2nd year, UEA) · building web apps, simulations, and 
 Java · Python · JavaScript · HTML · CSS · SQL
 
 ### Frameworks & Tools
-React · Spring Boot · Vercel · Docker · GitHub Actions
+React · Spring Boot · Vue · Node.js · PostgreSQL
 
 ### Concepts
 Data Structures & Algorithms · Concurrency · WebSockets · REST APIs · Database Design · OOP
