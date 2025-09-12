@@ -1,12 +1,12 @@
 # 👋 Hi — I'm Ollie Fawkes
-Computer Science student (2nd year, UEA) · building web apps, simulations, and tools to learn systems design.
+Computer Science student  · building web apps, simulations, and tools to learn systems design.
 
 ---
 
 ## 🔭 About me
-- 2nd year Computer Science student at UEA.
-- Interests: real-time systems, simulation, web apps.
-- Currently exploring: Optimal scheduling algorithms to develop a drone simulator/monitoring platform.
+- 3rd year Computer Science student at UEA.
+- Interests: real-time systems, simulation, backend design, DSA.
+
 
 <p align="center">
   <img src="assests/snake.gif" alt="Snake demo" width="700"/>
@@ -16,13 +16,11 @@ Computer Science student (2nd year, UEA) · building web apps, simulations, and 
 
 ## 🛠️ Skills
 ### Languages
-Java · Python · JavaScript · HTML · CSS · SQL
+Java · Python · JavaScript · SQL · SQL
 
 ### Frameworks & Tools
 React · Spring Boot · Vue · Node.js · PostgreSQL
 
-### Concepts
-Data Structures & Algorithms · Concurrency · WebSockets · REST APIs · Database Design · OOP
 
 ---
 
