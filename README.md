@@ -1,4 +1,4 @@
-# 👋 Hi — I'm Ollie Fawkes
+# 👋 
 Computer Science student  · building web apps, simulations, and tools to learn systems design.
 
 ---
