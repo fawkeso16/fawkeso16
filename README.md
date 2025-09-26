@@ -16,7 +16,7 @@ Computer Science student  · building web apps, simulations, and tools to learn 
 
 ## 🛠️ Skills
 ### Languages
-Java · Python · JavaScript · SQL · SQL
+Java · Python · JavaScript · SQL 
 
 ### Frameworks & Tools
 React · Spring Boot · Vue · Node.js · PostgreSQL
